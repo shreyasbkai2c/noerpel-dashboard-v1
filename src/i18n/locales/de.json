@@ -1,0 +1,225 @@
+{
+  "app": {
+    "title": "AI2RampOptimizer",
+    "subtitle": "Noerpel Logistikzentrum · Live-Dashboard",
+    "footer": {
+      "version": "AI2RampOptimizer v1.0 · Demo für Noerpel Group · © 2025 AI2Connect GmbH, Dortmund",
+      "compatible": "CargoClix & LFS V8 kompatibel",
+      "readOnly": "Nur lesender Zugriff",
+      "privacy": "DSGVO · On-Premise möglich"
+    }
+  },
+  "mode": {
+    "integrated": "Mit CargoClix/LFS V8",
+    "standalone": "Standalone",
+    "integratedDescription": "AI2RampOptimizer arbeitet als intelligente Schicht auf CargoClix und LFS V8. Wir greifen nur lesend auf Ihre Daten zu – Ihre Systeme bleiben unverändert.",
+    "standaloneDescription": "Für Standorte ohne bestehendes Zeitfenstermanagement bietet AI2RampOptimizer eine Komplettlösung mit NOCH größerem Optimierungspotenzial – ohne Systemgrenzen, volle KI-Power.",
+    "standaloneHighlight": "Größerer Mehrwert als reine Integration – volles Optimierungspotenzial ohne Legacy-Einschränkungen"
+  },
+  "sites": {
+    "selectSite": "Standort auswählen",
+    "docks": "Docks"
+  },
+  "docks": {
+    "title": "Dock-Status & Warteschlangen",
+    "dropZoneHint": "Drop-Zone für LKW-Zuweisung",
+    "queue": "Warteschlange",
+    "avgTime": "Ø {{time}} Min",
+    "historical": "{{perf}} hist.",
+    "current": "Aktuell: {{truck}}",
+    "assigned": "✓ Zugewiesen: {{truck}}",
+    "status": {
+      "free": "Frei",
+      "occupied": "Belegt",
+      "reserved": "Reserviert",
+      "maintenance": "Wartung"
+    },
+    "type": {
+      "standard": "Std",
+      "heavy": "Schwer",
+      "cooling": "Kühl"
+    }
+  },
+  "trucks": {
+    "title": "Eingehende LKW",
+    "dragDropHint": "Drag & Drop zur manuellen Zuweisung",
+    "eta": "ETA {{time}}",
+    "delay": {
+      "onTime": "Pünktlich",
+      "late": "+{{minutes}} Min",
+      "early": "{{minutes}} Min früh"
+    },
+    "status": {
+      "approaching": "Unterwegs",
+      "assigned": "Zugewiesen",
+      "docking": "Am Dock",
+      "processing": "In Bearbeitung",
+      "completed": "Abgeschlossen"
+    },
+    "toDock": "→ Dock {{dock}}"
+  },
+  "recommendations": {
+    "title": "KI-Empfehlungen",
+    "subtitle": "Multi-Agent System · Echtzeit-Analyse",
+    "dataSources": "Datenquellen (lesend)",
+    "live": "Live",
+    "priority": {
+      "high": "Dringend",
+      "medium": "Empfohlen",
+      "low": "Optional"
+    },
+    "historical": {
+      "fasterThanAvg": "Historisch {{percent}}% schneller als Durchschnitt",
+      "reducesDowntime": "Reduziert Standzeit um {{percent}}%",
+      "basedOnHistorical": "Basierend auf {{count}} historischen Abfertigungen"
+    },
+    "impact": {
+      "waitTime": "{{min}}-{{max}} Min",
+      "savings": "€{{min}}-{{max}}",
+      "co2": "{{min}}-{{max}} kg CO₂"
+    },
+    "apply": "✓ Empfehlung übernehmen",
+    "applyAll": "🚀 Alle Empfehlungen übernehmen",
+    "dispatcher": "Disponent entscheidet:",
+    "fullControl": "Sie behalten die volle Kontrolle",
+    "confidence": "{{score}}%",
+    "mock": {
+      "1": {
+        "title": "Optimale Dock-Zuweisung",
+        "description": "LKW-3847 (Noerpel, 15t Paletten) → Dock 7, 14:00 Uhr",
+        "historicalNote": "Historisch 23% schneller als Durchschnitt"
+      },
+      "2": {
+        "title": "Kühlware priorisieren",
+        "description": "LKW-9182 (Kühne+Nagel, Kühlware) → Dock 4 (Kühldock)",
+        "historicalNote": "Kühldock reduziert Standzeit um 18%"
+      },
+      "3": {
+        "title": "Dock 2 nutzen",
+        "description": "LKW-4821 (Schenker) → Dock 2 statt Dock 6",
+        "historicalNote": "Basierend auf 847 historischen Abfertigungen"
+      },
+      "4": {
+        "title": "Engpass-Warnung 09:25",
+        "description": "3 LKW treffen gleichzeitig ein. Dock 3 Warteschlange kritisch.",
+        "historicalNote": "Ähnliche Situation führte gestern zu +22 Min Wartezeit"
+      }
+    }
+  },
+  "agents": {
+    "title": "6 KI-Agenten im Hintergrund",
+    "titleExpanded": "6 KI-Agenten ausblenden",
+    "multiAgentSystem": "Multi-Agenten-System",
+    "activeAgent": "Aktiver Agent",
+    "status": {
+      "active": "Aktiv",
+      "processing": "Verarbeitet...",
+      "idle": "Bereit"
+    },
+    "names": {
+      "data": "Daten-Agent",
+      "analysis": "Analyse-Agent",
+      "prediction": "Vorhersage-Agent",
+      "recommendation": "Empfehlungs-Agent",
+      "learning": "Lern-Agent",
+      "orchestrator": "Orchestrator"
+    },
+    "tasks": {
+      "data": "Sammelt Daten aus CargoClix & LFS V8",
+      "dataStandalone": "Sammelt Daten aus manuellen Eingaben",
+      "analysis": "Erkennt Muster in Echtzeit",
+      "prediction": "Berechnet optimale Zuweisungen",
+      "recommendation": "Gibt Handlungsempfehlungen",
+      "learning": "Verbessert System kontinuierlich",
+      "orchestrator": "Koordiniert alle Agenten"
+    }
+  },
+  "activityFeed": {
+    "title": "Agent Activity",
+    "liveFeed": "Live Feed",
+    "messages": {
+      "newEta": "Neue ETA für {{truck}} empfangen",
+      "patternDetected": "Muster erkannt: {{count}} LKW-Cluster um {{time}}",
+      "bottleneckCalculated": "Engpass berechnet: Dock {{dock}}, +{{minutes}} min",
+      "recommendationGenerated": "Neue Empfehlung generiert (Konfidenz {{confidence}}%)",
+      "recommendationSent": "Empfehlung an Dashboard gesendet",
+      "learningUpdate": "Modell mit neuen Daten aktualisiert"
+    }
+  },
+  "kpis": {
+    "avgWaitTime": "Ø Wartezeit",
+    "avgWaitTimeUnit": "Min",
+    "avgWaitTimeSub": "-{{percent}}% mit KI",
+    "overtime": "Überstunden",
+    "overtimeSub": "Reduktion",
+    "dockUtilization": "Dock-Auslastung",
+    "dockUtilizationSub": "optimiert",
+    "monthlySavings": "Ersparnis/Monat",
+    "monthlySavingsSub": "pro Standort",
+    "trucksToday": "LKW heute",
+    "trucksTodaySub": "abgefertigt"
+  },
+  "comparison": {
+    "title": "ROI-Vergleich: Vorher vs. Mit AI2RampOptimizer",
+    "hide": "ROI-Vergleich ausblenden",
+    "monthlyRoi": "Monatlicher ROI pro Standort",
+    "today": "❌ Heute (manuell)",
+    "withAi": "✓ Mit AI2RampOptimizer",
+    "yearlyPotential": "Potenzielle Ersparnis pro Standort",
+    "metrics": {
+      "avgWaitTime": "Ø Wartezeit",
+      "overtime": "Überstunden",
+      "dockAssignment": "Dock-Zuweisung",
+      "dataDriven": "Datenbasierte Entscheidungen",
+      "monthlyCost": "Monatliche Kosten",
+      "monthlySavings": "Monatliche Ersparnis"
+    },
+    "values": {
+      "regular": "Regelmäßig",
+      "gutFeeling": "Bauchgefühl",
+      "rarely": "Selten",
+      "aiOptimized": "KI-optimiert",
+      "inSeconds": "In Sekunden"
+    }
+  },
+  "simulation": {
+    "title": "Simulation starten",
+    "button": "🎬 Simulation starten",
+    "stop": "⏹️ Simulation stoppen",
+    "scenarios": {
+      "trafficJamA8": "Stau A8",
+      "trafficJamA8Desc": "3 LKW melden Verzögerung",
+      "staffAbsence": "Personalausfall",
+      "staffAbsenceDesc": "2 Mitarbeiter krank",
+      "earlyArrival": "Frühankunft",
+      "earlyArrivalDesc": "LKW 45 Min früher",
+      "peakMonday": "Peak Montag",
+      "peakMondayDesc": "Alle buchen gleichzeitig"
+    },
+    "alert": "🚨 {{scenario}} gemeldet - {{count}} LKW betroffen"
+  },
+  "dataSource": {
+    "cargoclix": "CargoClix",
+    "lfsV8": "LFS V8",
+    "manual": "Manuelle Eingabe",
+    "excelImport": "Excel Import",
+    "directInput": "Direkte Eingabe"
+  },
+  "import": {
+    "excelImport": "📥 Excel Import",
+    "manualEntry": "✏️ Manueller Eintrag",
+    "importSuccess": "{{count}} Einträge erfolgreich importiert",
+    "entryAdded": "Neuer Eintrag hinzugefügt"
+  },
+  "notifications": {
+    "recommendationApplied": "✓ {{title}} angewendet ({{confidence}}% Confidence)"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler aufgetreten",
+    "retry": "Erneut versuchen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "close": "Schließen"
+  }
+}

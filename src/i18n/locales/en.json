@@ -1,0 +1,225 @@
+{
+    "app": {
+        "title": "AI2RampOptimizer",
+        "subtitle": "Noerpel Logistics Center · Live Dashboard",
+        "footer": {
+            "version": "AI2RampOptimizer v1.0 · Demo for Noerpel Group · © 2025 AI2Connect GmbH, Dortmund",
+            "compatible": "CargoClix & LFS V8 compatible",
+            "readOnly": "Read-only access",
+            "privacy": "GDPR · On-Premise available"
+        }
+    },
+    "mode": {
+        "integrated": "With CargoClix/LFS V8",
+        "standalone": "Standalone",
+        "integratedDescription": "AI2RampOptimizer works as an intelligent layer on top of CargoClix and LFS V8. We only access your data read-only – your systems remain unchanged.",
+        "standaloneDescription": "For locations without existing time slot management, AI2RampOptimizer offers a complete solution with EVEN greater optimization potential – without system limits, full AI power.",
+        "standaloneHighlight": "Greater value than pure integration – full optimization potential without legacy restrictions"
+    },
+    "sites": {
+        "selectSite": "Select location",
+        "docks": "Docks"
+    },
+    "docks": {
+        "title": "Dock Status & Queues",
+        "dropZoneHint": "Drop zone for truck assignment",
+        "queue": "Queue",
+        "avgTime": "Ø {{time}} min",
+        "historical": "{{perf}} hist.",
+        "current": "Current: {{truck}}",
+        "assigned": "✓ Assigned: {{truck}}",
+        "status": {
+            "free": "Free",
+            "occupied": "Occupied",
+            "reserved": "Reserved",
+            "maintenance": "Maintenance"
+        },
+        "type": {
+            "standard": "Std",
+            "heavy": "Heavy",
+            "cooling": "Cool"
+        }
+    },
+    "trucks": {
+        "title": "Incoming Trucks",
+        "dragDropHint": "Drag & Drop for manual assignment",
+        "eta": "ETA {{time}}",
+        "delay": {
+            "onTime": "On time",
+            "late": "+{{minutes}} min",
+            "early": "{{minutes}} min early"
+        },
+        "status": {
+            "approaching": "Approaching",
+            "assigned": "Assigned",
+            "docking": "Docking",
+            "processing": "Processing",
+            "completed": "Completed"
+        },
+        "toDock": "→ Dock {{dock}}"
+    },
+    "recommendations": {
+        "title": "AI Recommendations",
+        "subtitle": "Multi-Agent System · Real-time Analysis",
+        "dataSources": "Data sources (read-only)",
+        "live": "Live",
+        "priority": {
+            "high": "Urgent",
+            "medium": "Recommended",
+            "low": "Optional"
+        },
+        "historical": {
+            "fasterThanAvg": "Historically {{percent}}% faster than average",
+            "reducesDowntime": "Reduces downtime by {{percent}}%",
+            "basedOnHistorical": "Based on {{count}} historical clearances"
+        },
+        "impact": {
+            "waitTime": "{{min}}-{{max}} min",
+            "savings": "€{{min}}-{{max}}",
+            "co2": "{{min}}-{{max}} kg CO₂"
+        },
+        "apply": "✓ Apply recommendation",
+        "applyAll": "🚀 Apply all recommendations",
+        "dispatcher": "Dispatcher decides:",
+        "fullControl": "You remain in full control",
+        "confidence": "{{score}}%",
+        "mock": {
+            "1": {
+                "title": "Optimal Dock Assignment",
+                "description": "Truck-3847 (Noerpel, 15t Pallets) → Dock 7, 14:00",
+                "historicalNote": "Historically 23% faster than average"
+            },
+            "2": {
+                "title": "Prioritize Cold Storage",
+                "description": "Truck-9182 (Kühne+Nagel, Cold Goods) → Dock 4 (Cold Dock)",
+                "historicalNote": "Cold dock reduces dwell time by 18%"
+            },
+            "3": {
+                "title": "Use Dock 2",
+                "description": "Truck-4821 (Schenker) → Dock 2 instead of Dock 6",
+                "historicalNote": "Based on 847 historical clearances"
+            },
+            "4": {
+                "title": "Bottleneck Warning 09:25",
+                "description": "3 Trucks arriving simultaneously. Dock 3 queue critical.",
+                "historicalNote": "Similar situation yesterday led to +22 min wait time"
+            }
+        }
+    },
+    "agents": {
+        "title": "Show 6 AI Agents in background",
+        "titleExpanded": "Hide 6 AI Agents",
+        "multiAgentSystem": "Multi-Agent System",
+        "activeAgent": "Active Agent",
+        "status": {
+            "active": "Active",
+            "processing": "Processing...",
+            "idle": "Ready"
+        },
+        "names": {
+            "data": "Data Agent",
+            "analysis": "Analysis Agent",
+            "prediction": "Prediction Agent",
+            "recommendation": "Recommendation Agent",
+            "learning": "Learning Agent",
+            "orchestrator": "Orchestrator"
+        },
+        "tasks": {
+            "data": "Collects data from CargoClix & LFS V8",
+            "dataStandalone": "Collects data from manual inputs",
+            "analysis": "Detects patterns in real-time",
+            "prediction": "Calculates optimal assignments",
+            "recommendation": "Provides action recommendations",
+            "learning": "Continuously improves the system",
+            "orchestrator": "Coordinates all agents"
+        }
+    },
+    "activityFeed": {
+        "title": "Agent Activity",
+        "liveFeed": "Live Feed",
+        "messages": {
+            "newEta": "New ETA for {{truck}} received",
+            "patternDetected": "Pattern detected: {{count}} truck clusters at {{time}}",
+            "bottleneckCalculated": "Bottleneck calculated: Dock {{dock}}, +{{minutes}} min",
+            "recommendationGenerated": "New recommendation generated (Confidence {{confidence}}%)",
+            "recommendationSent": "Recommendation sent to dashboard",
+            "learningUpdate": "Model updated with new data"
+        }
+    },
+    "kpis": {
+        "avgWaitTime": "Ø Wait Time",
+        "avgWaitTimeUnit": "min",
+        "avgWaitTimeSub": "-{{percent}}% with AI",
+        "overtime": "Overtime",
+        "overtimeSub": "Reduction",
+        "dockUtilization": "Dock Utilization",
+        "dockUtilizationSub": "optimized",
+        "monthlySavings": "Savings/Month",
+        "monthlySavingsSub": "per location",
+        "trucksToday": "Trucks Today",
+        "trucksTodaySub": "processed"
+    },
+    "comparison": {
+        "title": "ROI Comparison: Before vs. With AI2RampOptimizer",
+        "hide": "Hide ROI comparison",
+        "monthlyRoi": "Monthly ROI per location",
+        "today": "❌ Today (manual)",
+        "withAi": "✓ With AI2RampOptimizer",
+        "yearlyPotential": "Potential savings per location",
+        "metrics": {
+            "avgWaitTime": "Ø Wait Time",
+            "overtime": "Overtime",
+            "dockAssignment": "Dock Assignment",
+            "dataDriven": "Data-driven Decisions",
+            "monthlyCost": "Monthly Cost",
+            "monthlySavings": "Monthly Savings"
+        },
+        "values": {
+            "regular": "Regular",
+            "gutFeeling": "Gut feeling",
+            "rarely": "Rarely",
+            "aiOptimized": "AI-optimized",
+            "inSeconds": "In seconds"
+        }
+    },
+    "simulation": {
+        "title": "Start Simulation",
+        "button": "🎬 Start Simulation",
+        "stop": "⏹️ Stop Simulation",
+        "scenarios": {
+            "trafficJamA8": "Traffic Jam A8",
+            "trafficJamA8Desc": "3 trucks report delay",
+            "staffAbsence": "Staff Absence",
+            "staffAbsenceDesc": "2 employees sick",
+            "earlyArrival": "Early Arrival",
+            "earlyArrivalDesc": "Truck 45 min early",
+            "peakMonday": "Peak Monday",
+            "peakMondayDesc": "Everyone books at once"
+        },
+        "alert": "🚨 {{scenario}} reported - {{count}} trucks affected"
+    },
+    "dataSource": {
+        "cargoclix": "CargoClix",
+        "lfsV8": "LFS V8",
+        "manual": "Manual Entry",
+        "excelImport": "Excel Import",
+        "directInput": "Direct Input"
+    },
+    "import": {
+        "excelImport": "📥 Excel Import",
+        "manualEntry": "✏️ Manual Entry",
+        "importSuccess": "{{count}} entries successfully imported",
+        "entryAdded": "New entry added"
+    },
+    "notifications": {
+        "recommendationApplied": "✓ {{title}} applied ({{confidence}}% Confidence)"
+    },
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "retry": "Retry",
+        "cancel": "Cancel",
+        "save": "Save",
+        "close": "Close"
+    }
+}
